@@ -1,0 +1,10 @@
+source:
+  host: localhost
+  user: root
+  password: 
+  database: procurement
+destination:
+  host: localhost
+  user: root
+  password: 
+  database: procurement_audit

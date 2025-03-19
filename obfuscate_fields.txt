@@ -1,0 +1,8 @@
+supplier_class - vendor_desc
+supplier_class - piva
+supplier_class - cod_fisc
+supplier_class - capogruppo
+supplier_class - jag_email
+supplier_class - chiave_capogruppo
+maturity_wall - data_spedizione_contratto
+

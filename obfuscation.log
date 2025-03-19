@@ -1,0 +1,33 @@
+2025-03-19 15:43:45,523 - INFO - Avvio script di offuscamento del database
+2025-03-19 15:43:45,530 - INFO - Avvio processo di offuscamento del database
+2025-03-19 15:43:45,615 - INFO - Connesso al DB sorgente: procurement
+2025-03-19 15:43:45,619 - INFO - Connesso al DB destinazione: procurement_audit
+2025-03-19 15:43:45,756 - INFO - Elaborazione tabella: supplier_class
+2025-03-19 15:43:45,821 - INFO - Tabella supplier_class ricreata nel database destinazione
+2025-03-19 15:43:45,940 - INFO - Trovati 1515 record nella tabella supplier_class
+2025-03-19 15:43:45,947 - INFO - Campo vendor_desc: tipo varchar -> offuscamento text
+2025-03-19 15:43:45,958 - INFO - Campo piva: tipo varchar -> offuscamento text
+2025-03-19 15:43:45,970 - INFO - Campo cod_fisc: tipo varchar -> offuscamento text
+2025-03-19 15:43:45,981 - INFO - Campo capogruppo: tipo varchar -> offuscamento text
+2025-03-19 15:43:45,994 - INFO - Campo jag_email: tipo varchar -> offuscamento text
+2025-03-19 15:43:46,008 - INFO - Campo chiave_capogruppo: tipo varchar -> offuscamento text
+2025-03-19 15:43:46,355 - INFO - Elaborati 1000/1515 record nella tabella supplier_class
+2025-03-19 15:43:46,531 - INFO - Elaborati 1515/1515 record nella tabella supplier_class
+2025-03-19 15:43:46,531 - INFO - Tabella supplier_class elaborata con successo
+2025-03-19 15:43:46,547 - INFO - Elaborazione tabella: maturity_wall
+2025-03-19 15:43:46,602 - INFO - Tabella maturity_wall ricreata nel database destinazione
+2025-03-19 15:43:46,666 - INFO - Trovati 480 record nella tabella maturity_wall
+2025-03-19 15:43:46,675 - INFO - Campo data_spedizione_contratto: tipo date -> offuscamento date
+2025-03-19 15:43:46,856 - INFO - Elaborati 480/480 record nella tabella maturity_wall
+2025-03-19 15:43:46,856 - INFO - Tabella maturity_wall elaborata con successo
+2025-03-19 15:43:46,858 - INFO - 
+
+=== RIEPILOGO ESECUZIONE ===
+2025-03-19 15:43:46,858 - INFO - Tabelle elaborate con successo: 2
+2025-03-19 15:43:46,859 - INFO -  - supplier_class
+2025-03-19 15:43:46,859 - INFO -  - maturity_wall
+2025-03-19 15:43:46,859 - INFO - ===========================
+2025-03-19 15:43:46,860 - INFO - Processo di offuscamento completato.
+2025-03-19 15:43:46,860 - INFO - Connessione al DB sorgente chiusa
+2025-03-19 15:43:46,862 - INFO - Connessione al DB destinazione chiusa
+2025-03-19 15:43:46,862 - INFO - Script completato con successo

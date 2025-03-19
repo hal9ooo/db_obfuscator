@@ -111,11 +111,13 @@ class DbObfuscator:
                 database=self.config['destination']['database']
             )
             logger.info(f"Connesso al DB destinazione: {self.config['destination']['database']}")
-            
+
         except Error as e:
             logger.error(f"Errore nella connessione al database: {e}")
+            self.source_conn = None  # Ensure it's set to None on failure
+            self.dest_conn = None  # Ensure it's set to None on failure
             raise
-    
+
     def close(self):
         """Chiude le connessioni ai database"""
         if self.source_conn and self.source_conn.is_connected():
@@ -363,13 +365,17 @@ class DbObfuscator:
             logger.error(f"ERRORE: La tabella '{table_name}' non esiste nel database di origine. Questa tabella verrà ignorata.")
             return
         
+        
+        if self.dest_conn is None:
+            logger.error(f"Impossibile elaborare la tabella '{table_name}' perché la connessione al database di destinazione non è valida.")
+            return
+
         source_cursor = self.source_conn.cursor(dictionary=True)
         dest_cursor = self.dest_conn.cursor()
-        
+
         try:
             # Ottiene struttura tabella
             columns, create_table_sql = self.get_table_structure(table_name)
-            
             # Elimina tabella destinazione se esiste
             dest_cursor.execute(f"DROP TABLE IF EXISTS {table_name}")
             dest_cursor.execute(create_table_sql)
@@ -438,31 +444,31 @@ class DbObfuscator:
                         for record in batch:
                             # Crea copia del record
                             new_record = list(record.values())
-                            
+
                             # Offusca i campi necessari
                             for idx, field in enumerate(fields):
                                 if field in fields_to_obfuscate:
                                     obf_type = field_types[field]
                                     value = new_record[idx]
-                                    
+
                                     if obf_type == 'text':
                                         new_record[idx] = self.obfuscate_text(value)
                                     elif obf_type == 'date':
                                         new_record[idx] = self.obfuscate_date(value)
                                     elif obf_type == 'number':
                                         new_record[idx] = self.obfuscate_number(value)
-                            
-                            values_batch.append(new_record)
-                        
-                        # Esegue inserimento batch
+
+                            values_batch.append(tuple(new_record))
+
+                        # Esegue inserimento batch con parameterized query
                         dest_cursor.executemany(insert_query, values_batch)
                         self.dest_conn.commit()
-                        
+
                         total_processed += len(batch)
                         logger.info(f"Elaborati {total_processed}/{len(records)} record nella tabella {table_name}")
-            
+
             logger.info(f"Tabella {table_name} elaborata con successo")
-        
+
         except Error as e:
             self.dest_conn.rollback()
             logger.error(f"Errore nell'elaborazione della tabella {table_name}: {e}")

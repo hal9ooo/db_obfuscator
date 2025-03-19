@@ -31,3 +31,164 @@
 2025-03-19 15:43:46,860 - INFO - Connessione al DB sorgente chiusa
 2025-03-19 15:43:46,862 - INFO - Connessione al DB destinazione chiusa
 2025-03-19 15:43:46,862 - INFO - Script completato con successo
+2025-03-19 15:55:46,071 - INFO - Avvio script di offuscamento del database
+2025-03-19 15:55:46,077 - INFO - Avvio processo di offuscamento del database
+2025-03-19 15:55:46,137 - INFO - Connesso al DB sorgente: procurement
+2025-03-19 15:55:46,141 - INFO - Connesso al DB destinazione: procurement_audit
+2025-03-19 15:55:46,203 - INFO - Elaborazione tabella: supplier_class
+2025-03-19 15:55:46,242 - INFO - Tabella supplier_class ricreata nel database destinazione
+2025-03-19 15:55:46,316 - INFO - Trovati 1515 record nella tabella supplier_class
+2025-03-19 15:55:46,324 - INFO - Campo vendor_desc: tipo varchar -> offuscamento text
+2025-03-19 15:55:46,332 - INFO - Campo piva: tipo varchar -> offuscamento text
+2025-03-19 15:55:46,342 - INFO - Campo cod_fisc: tipo varchar -> offuscamento text
+2025-03-19 15:55:46,350 - INFO - Campo capogruppo: tipo varchar -> offuscamento text
+2025-03-19 15:55:46,361 - INFO - Campo jag_email: tipo varchar -> offuscamento text
+2025-03-19 15:55:46,371 - INFO - Campo chiave_capogruppo: tipo varchar -> offuscamento text
+2025-03-19 15:55:46,652 - INFO - Elaborati 1000/1515 record nella tabella supplier_class
+2025-03-19 15:55:46,762 - INFO - Elaborati 1515/1515 record nella tabella supplier_class
+2025-03-19 15:55:46,762 - INFO - Tabella supplier_class elaborata con successo
+2025-03-19 15:55:46,778 - INFO - Elaborazione tabella: maturity_wall
+2025-03-19 15:55:46,808 - INFO - Tabella maturity_wall ricreata nel database destinazione
+2025-03-19 15:55:46,856 - INFO - Trovati 480 record nella tabella maturity_wall
+2025-03-19 15:55:46,862 - INFO - Campo data_spedizione_contratto: tipo date -> offuscamento date
+2025-03-19 15:55:47,005 - INFO - Elaborati 480/480 record nella tabella maturity_wall
+2025-03-19 15:55:47,006 - INFO - Tabella maturity_wall elaborata con successo
+2025-03-19 15:55:47,009 - WARNING - Tabella 'ppm_anag_fornitore' non trovata nel database di origine. Verrà ignorata.
+2025-03-19 15:55:47,010 - INFO - 
+
+=== RIEPILOGO ESECUZIONE ===
+2025-03-19 15:55:47,010 - INFO - Tabelle elaborate con successo: 2
+2025-03-19 15:55:47,011 - INFO -  - supplier_class
+2025-03-19 15:55:47,011 - INFO -  - maturity_wall
+2025-03-19 15:55:47,012 - WARNING - Tabelle ignorate (non esistenti nel DB sorgente): 1
+2025-03-19 15:55:47,012 - WARNING -  - ppm_anag_fornitore
+2025-03-19 15:55:47,012 - INFO - ===========================
+2025-03-19 15:55:47,012 - INFO - Processo di offuscamento completato.
+2025-03-19 15:55:47,013 - INFO - Connessione al DB sorgente chiusa
+2025-03-19 15:55:47,014 - INFO - Connessione al DB destinazione chiusa
+2025-03-19 15:55:47,014 - INFO - Script completato con successo
+2025-03-19 15:56:08,396 - INFO - Avvio script di offuscamento del database
+2025-03-19 15:56:08,399 - INFO - Avvio processo di offuscamento del database
+2025-03-19 15:56:08,453 - INFO - Connesso al DB sorgente: procurement
+2025-03-19 15:56:08,456 - INFO - Connesso al DB destinazione: procurement_audit
+2025-03-19 15:56:08,511 - INFO - Elaborazione tabella: supplier_class
+2025-03-19 15:56:08,550 - INFO - Tabella supplier_class ricreata nel database destinazione
+2025-03-19 15:56:08,625 - INFO - Trovati 1515 record nella tabella supplier_class
+2025-03-19 15:56:08,630 - INFO - Campo vendor_desc: tipo varchar -> offuscamento text
+2025-03-19 15:56:08,640 - INFO - Campo piva: tipo varchar -> offuscamento text
+2025-03-19 15:56:08,649 - INFO - Campo cod_fisc: tipo varchar -> offuscamento text
+2025-03-19 15:56:08,657 - INFO - Campo capogruppo: tipo varchar -> offuscamento text
+2025-03-19 15:56:08,666 - INFO - Campo jag_email: tipo varchar -> offuscamento text
+2025-03-19 15:56:08,674 - INFO - Campo chiave_capogruppo: tipo varchar -> offuscamento text
+2025-03-19 15:56:08,877 - INFO - Elaborati 1000/1515 record nella tabella supplier_class
+2025-03-19 15:56:08,980 - INFO - Elaborati 1515/1515 record nella tabella supplier_class
+2025-03-19 15:56:08,980 - INFO - Tabella supplier_class elaborata con successo
+2025-03-19 15:56:08,990 - INFO - Elaborazione tabella: maturity_wall
+2025-03-19 15:56:09,020 - INFO - Tabella maturity_wall ricreata nel database destinazione
+2025-03-19 15:56:09,058 - INFO - Trovati 480 record nella tabella maturity_wall
+2025-03-19 15:56:09,065 - INFO - Campo data_spedizione_contratto: tipo date -> offuscamento date
+2025-03-19 15:56:09,208 - INFO - Elaborati 480/480 record nella tabella maturity_wall
+2025-03-19 15:56:09,209 - INFO - Tabella maturity_wall elaborata con successo
+2025-03-19 15:56:09,222 - INFO - Elaborazione tabella: ppm_anag_fornitori
+2025-03-19 15:56:09,263 - INFO - Tabella ppm_anag_fornitori ricreata nel database destinazione
+2025-03-19 15:56:21,627 - INFO - Trovati 85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:21,644 - INFO - Campo titolo_posizione: tipo text -> offuscamento text
+2025-03-19 15:56:22,164 - INFO - Elaborati 1000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:22,568 - INFO - Elaborati 2000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:23,191 - INFO - Elaborati 3000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:23,717 - INFO - Elaborati 4000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:24,488 - INFO - Elaborati 5000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:25,013 - INFO - Elaborati 6000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:25,562 - INFO - Elaborati 7000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:26,206 - INFO - Elaborati 8000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:26,720 - INFO - Elaborati 9000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:27,162 - INFO - Elaborati 10000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:27,598 - INFO - Elaborati 11000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:28,005 - INFO - Elaborati 12000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:28,431 - INFO - Elaborati 13000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:28,859 - INFO - Elaborati 14000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:29,296 - INFO - Elaborati 15000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:29,716 - INFO - Elaborati 16000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:30,137 - INFO - Elaborati 17000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:30,590 - INFO - Elaborati 18000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:31,112 - INFO - Elaborati 19000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:31,699 - INFO - Elaborati 20000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:32,347 - INFO - Elaborati 21000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:32,953 - INFO - Elaborati 22000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:33,454 - INFO - Elaborati 23000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:33,913 - INFO - Elaborati 24000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:34,413 - INFO - Elaborati 25000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:34,906 - INFO - Elaborati 26000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:35,405 - INFO - Elaborati 27000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:35,867 - INFO - Elaborati 28000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:36,338 - INFO - Elaborati 29000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:36,865 - INFO - Elaborati 30000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:37,357 - INFO - Elaborati 31000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:38,021 - INFO - Elaborati 32000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:38,882 - INFO - Elaborati 33000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:39,453 - INFO - Elaborati 34000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:40,014 - INFO - Elaborati 35000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:40,561 - INFO - Elaborati 36000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:41,149 - INFO - Elaborati 37000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:41,879 - INFO - Elaborati 38000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:42,464 - INFO - Elaborati 39000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:43,027 - INFO - Elaborati 40000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:43,713 - INFO - Elaborati 41000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:44,635 - INFO - Elaborati 42000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:45,439 - INFO - Elaborati 43000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:46,003 - INFO - Elaborati 44000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:46,909 - INFO - Elaborati 45000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:47,530 - INFO - Elaborati 46000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:48,359 - INFO - Elaborati 47000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:48,944 - INFO - Elaborati 48000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:49,642 - INFO - Elaborati 49000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:50,170 - INFO - Elaborati 50000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:50,743 - INFO - Elaborati 51000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:51,327 - INFO - Elaborati 52000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:51,958 - INFO - Elaborati 53000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:52,483 - INFO - Elaborati 54000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:53,018 - INFO - Elaborati 55000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:53,586 - INFO - Elaborati 56000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:54,095 - INFO - Elaborati 57000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:54,630 - INFO - Elaborati 58000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:55,292 - INFO - Elaborati 59000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:55,995 - INFO - Elaborati 60000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:56,626 - INFO - Elaborati 61000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:57,178 - INFO - Elaborati 62000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:57,737 - INFO - Elaborati 63000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:58,331 - INFO - Elaborati 64000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:56:59,406 - INFO - Elaborati 65000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:00,018 - INFO - Elaborati 66000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:00,583 - INFO - Elaborati 67000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:01,402 - INFO - Elaborati 68000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:02,055 - INFO - Elaborati 69000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:02,761 - INFO - Elaborati 70000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:03,342 - INFO - Elaborati 71000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:03,910 - INFO - Elaborati 72000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:04,486 - INFO - Elaborati 73000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:05,080 - INFO - Elaborati 74000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:05,656 - INFO - Elaborati 75000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:06,214 - INFO - Elaborati 76000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:06,792 - INFO - Elaborati 77000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:07,375 - INFO - Elaborati 78000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:08,019 - INFO - Elaborati 79000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:08,697 - INFO - Elaborati 80000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:09,287 - INFO - Elaborati 81000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:09,840 - INFO - Elaborati 82000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:10,402 - INFO - Elaborati 83000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:10,992 - INFO - Elaborati 84000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:11,612 - INFO - Elaborati 85000/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:12,211 - INFO - Elaborati 85834/85834 record nella tabella ppm_anag_fornitori
+2025-03-19 15:57:12,211 - INFO - Tabella ppm_anag_fornitori elaborata con successo
+2025-03-19 15:57:12,381 - INFO - 
+
+=== RIEPILOGO ESECUZIONE ===
+2025-03-19 15:57:12,382 - INFO - Tabelle elaborate con successo: 3
+2025-03-19 15:57:12,382 - INFO -  - supplier_class
+2025-03-19 15:57:12,383 - INFO -  - maturity_wall
+2025-03-19 15:57:12,383 - INFO -  - ppm_anag_fornitori
+2025-03-19 15:57:12,384 - INFO - ===========================
+2025-03-19 15:57:12,384 - INFO - Processo di offuscamento completato.
+2025-03-19 15:57:12,385 - INFO - Connessione al DB sorgente chiusa
+2025-03-19 15:57:12,386 - INFO - Connessione al DB destinazione chiusa
+2025-03-19 15:57:12,386 - INFO - Script completato con successo

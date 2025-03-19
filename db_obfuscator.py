@@ -397,8 +397,8 @@ class DbObfuscator:
                 if records:
                     fields = list(records[0].keys())
                     placeholders = ', '.join(['%s'] * len(fields))
-                    insert_query = f"INSERT INTO {table_name} ({', '.join(fields)}) VALUES ({placeholders})"
-                    
+                    insert_query = f"INSERT INTO `{table_name}` ({', '.join([f'`{f}`' for f in fields])}) VALUES ({placeholders})"
+
                     # Prepara i valori (in batch per efficienza)
                     batch_size = 1000
                     for i in range(0, len(records), batch_size):
@@ -431,8 +431,8 @@ class DbObfuscator:
                 if records:
                     fields = list(records[0].keys())
                     placeholders = ', '.join(['%s'] * len(fields))
-                    insert_query = f"INSERT INTO {table_name} ({', '.join(fields)}) VALUES ({placeholders})"
-                    
+                    insert_query = f"INSERT INTO `{table_name}` ({', '.join([f'`{f}`' for f in fields])}) VALUES ({placeholders})"
+
                     # Batch processing
                     batch_size = 1000
                     total_processed = 0

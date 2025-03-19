@@ -5,4 +5,5 @@ supplier_class - capogruppo
 supplier_class - jag_email
 supplier_class - chiave_capogruppo
 maturity_wall - data_spedizione_contratto
+ppm_anag_fornitori - titolo_posizione
 
